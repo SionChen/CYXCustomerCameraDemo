@@ -1,0 +1,396 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		55C70E08221FF3B80069EEFB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 55C70E07221FF3B80069EEFB /* AppDelegate.m */; };
+		55C70E0B221FF3B80069EEFB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 55C70E0A221FF3B80069EEFB /* ViewController.m */; };
+		55C70E0E221FF3B80069EEFB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55C70E0C221FF3B80069EEFB /* Main.storyboard */; };
+		55C70E10221FF3BB0069EEFB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55C70E0F221FF3BB0069EEFB /* Assets.xcassets */; };
+		55C70E13221FF3BB0069EEFB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55C70E11221FF3BB0069EEFB /* LaunchScreen.storyboard */; };
+		55C70E16221FF3BB0069EEFB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 55C70E15221FF3BB0069EEFB /* main.m */; };
+		55C70E1F221FF42A0069EEFB /* CYXCameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 55C70E1E221FF42A0069EEFB /* CYXCameraViewController.m */; };
+		55C70E22221FF8210069EEFB /* photograph@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 55C70E20221FF8210069EEFB /* photograph@2x.png */; };
+		55C70E23221FF8210069EEFB /* photograph@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 55C70E21221FF8210069EEFB /* photograph@3x.png */; };
+		55C70E26221FFBD70069EEFB /* CYXCameraShadowView.m in Sources */ = {isa = PBXBuildFile; fileRef = 55C70E25221FFBD70069EEFB /* CYXCameraShadowView.m */; };
+		55C70E2B221FFC0C0069EEFB /* cardShadowBack@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 55C70E27221FFC0C0069EEFB /* cardShadowBack@3x.png */; };
+		55C70E2C221FFC0C0069EEFB /* cardShadowFront@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 55C70E28221FFC0C0069EEFB /* cardShadowFront@2x.png */; };
+		55C70E2D221FFC0C0069EEFB /* cardShadowBack@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 55C70E29221FFC0C0069EEFB /* cardShadowBack@2x.png */; };
+		55C70E2E221FFC0C0069EEFB /* cardShadowFront@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 55C70E2A221FFC0C0069EEFB /* cardShadowFront@3x.png */; };
+		55C70E31221FFD470069EEFB /* cameraClose@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 55C70E2F221FFD470069EEFB /* cameraClose@2x.png */; };
+		55C70E32221FFD470069EEFB /* cameraClose@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 55C70E30221FFD470069EEFB /* cameraClose@3x.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		55C70E03221FF3B80069EEFB /* CYXCustomerCameraDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CYXCustomerCameraDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		55C70E06221FF3B80069EEFB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		55C70E07221FF3B80069EEFB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		55C70E09221FF3B80069EEFB /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		55C70E0A221FF3B80069EEFB /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		55C70E0D221FF3B80069EEFB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		55C70E0F221FF3BB0069EEFB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		55C70E12221FF3BB0069EEFB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		55C70E14221FF3BB0069EEFB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		55C70E15221FF3BB0069EEFB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		55C70E1D221FF42A0069EEFB /* CYXCameraViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CYXCameraViewController.h; sourceTree = "<group>"; };
+		55C70E1E221FF42A0069EEFB /* CYXCameraViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CYXCameraViewController.m; sourceTree = "<group>"; };
+		55C70E20221FF8210069EEFB /* photograph@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "photograph@2x.png"; sourceTree = "<group>"; };
+		55C70E21221FF8210069EEFB /* photograph@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "photograph@3x.png"; sourceTree = "<group>"; };
+		55C70E24221FFBD70069EEFB /* CYXCameraShadowView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYXCameraShadowView.h; sourceTree = "<group>"; };
+		55C70E25221FFBD70069EEFB /* CYXCameraShadowView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYXCameraShadowView.m; sourceTree = "<group>"; };
+		55C70E27221FFC0C0069EEFB /* cardShadowBack@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cardShadowBack@3x.png"; sourceTree = "<group>"; };
+		55C70E28221FFC0C0069EEFB /* cardShadowFront@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cardShadowFront@2x.png"; sourceTree = "<group>"; };
+		55C70E29221FFC0C0069EEFB /* cardShadowBack@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cardShadowBack@2x.png"; sourceTree = "<group>"; };
+		55C70E2A221FFC0C0069EEFB /* cardShadowFront@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cardShadowFront@3x.png"; sourceTree = "<group>"; };
+		55C70E2F221FFD470069EEFB /* cameraClose@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cameraClose@2x.png"; sourceTree = "<group>"; };
+		55C70E30221FFD470069EEFB /* cameraClose@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cameraClose@3x.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		55C70E00221FF3B80069EEFB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		55C70DFA221FF3B80069EEFB = {
+			isa = PBXGroup;
+			children = (
+				55C70E05221FF3B80069EEFB /* CYXCustomerCameraDemo */,
+				55C70E04221FF3B80069EEFB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		55C70E04221FF3B80069EEFB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				55C70E03221FF3B80069EEFB /* CYXCustomerCameraDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		55C70E05221FF3B80069EEFB /* CYXCustomerCameraDemo */ = {
+			isa = PBXGroup;
+			children = (
+				55C70E1C221FF40F0069EEFB /* CYXCamera */,
+				55C70E06221FF3B80069EEFB /* AppDelegate.h */,
+				55C70E07221FF3B80069EEFB /* AppDelegate.m */,
+				55C70E09221FF3B80069EEFB /* ViewController.h */,
+				55C70E0A221FF3B80069EEFB /* ViewController.m */,
+				55C70E0C221FF3B80069EEFB /* Main.storyboard */,
+				55C70E0F221FF3BB0069EEFB /* Assets.xcassets */,
+				55C70E11221FF3BB0069EEFB /* LaunchScreen.storyboard */,
+				55C70E14221FF3BB0069EEFB /* Info.plist */,
+				55C70E15221FF3BB0069EEFB /* main.m */,
+			);
+			path = CYXCustomerCameraDemo;
+			sourceTree = "<group>";
+		};
+		55C70E1C221FF40F0069EEFB /* CYXCamera */ = {
+			isa = PBXGroup;
+			children = (
+				55C70E20221FF8210069EEFB /* photograph@2x.png */,
+				55C70E21221FF8210069EEFB /* photograph@3x.png */,
+				55C70E29221FFC0C0069EEFB /* cardShadowBack@2x.png */,
+				55C70E27221FFC0C0069EEFB /* cardShadowBack@3x.png */,
+				55C70E28221FFC0C0069EEFB /* cardShadowFront@2x.png */,
+				55C70E2A221FFC0C0069EEFB /* cardShadowFront@3x.png */,
+				55C70E2F221FFD470069EEFB /* cameraClose@2x.png */,
+				55C70E30221FFD470069EEFB /* cameraClose@3x.png */,
+				55C70E1D221FF42A0069EEFB /* CYXCameraViewController.h */,
+				55C70E1E221FF42A0069EEFB /* CYXCameraViewController.m */,
+				55C70E24221FFBD70069EEFB /* CYXCameraShadowView.h */,
+				55C70E25221FFBD70069EEFB /* CYXCameraShadowView.m */,
+			);
+			path = CYXCamera;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		55C70E02221FF3B80069EEFB /* CYXCustomerCameraDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 55C70E19221FF3BB0069EEFB /* Build configuration list for PBXNativeTarget "CYXCustomerCameraDemo" */;
+			buildPhases = (
+				55C70DFF221FF3B80069EEFB /* Sources */,
+				55C70E00221FF3B80069EEFB /* Frameworks */,
+				55C70E01221FF3B80069EEFB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CYXCustomerCameraDemo;
+			productName = CYXCustomerCameraDemo;
+			productReference = 55C70E03221FF3B80069EEFB /* CYXCustomerCameraDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		55C70DFB221FF3B80069EEFB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "超级腕电商";
+				TargetAttributes = {
+					55C70E02221FF3B80069EEFB = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = 55C70DFE221FF3B80069EEFB /* Build configuration list for PBXProject "CYXCustomerCameraDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 55C70DFA221FF3B80069EEFB;
+			productRefGroup = 55C70E04221FF3B80069EEFB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				55C70E02221FF3B80069EEFB /* CYXCustomerCameraDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		55C70E01221FF3B80069EEFB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55C70E2E221FFC0C0069EEFB /* cardShadowFront@3x.png in Resources */,
+				55C70E13221FF3BB0069EEFB /* LaunchScreen.storyboard in Resources */,
+				55C70E10221FF3BB0069EEFB /* Assets.xcassets in Resources */,
+				55C70E23221FF8210069EEFB /* photograph@3x.png in Resources */,
+				55C70E2D221FFC0C0069EEFB /* cardShadowBack@2x.png in Resources */,
+				55C70E22221FF8210069EEFB /* photograph@2x.png in Resources */,
+				55C70E32221FFD470069EEFB /* cameraClose@3x.png in Resources */,
+				55C70E31221FFD470069EEFB /* cameraClose@2x.png in Resources */,
+				55C70E2C221FFC0C0069EEFB /* cardShadowFront@2x.png in Resources */,
+				55C70E2B221FFC0C0069EEFB /* cardShadowBack@3x.png in Resources */,
+				55C70E0E221FF3B80069EEFB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		55C70DFF221FF3B80069EEFB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55C70E1F221FF42A0069EEFB /* CYXCameraViewController.m in Sources */,
+				55C70E0B221FF3B80069EEFB /* ViewController.m in Sources */,
+				55C70E26221FFBD70069EEFB /* CYXCameraShadowView.m in Sources */,
+				55C70E16221FF3BB0069EEFB /* main.m in Sources */,
+				55C70E08221FF3B80069EEFB /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		55C70E0C221FF3B80069EEFB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				55C70E0D221FF3B80069EEFB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		55C70E11221FF3BB0069EEFB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				55C70E12221FF3BB0069EEFB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		55C70E17221FF3BB0069EEFB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		55C70E18221FF3BB0069EEFB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		55C70E1A221FF3BB0069EEFB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UDTM6QBP66;
+				INFOPLIST_FILE = CYXCustomerCameraDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = model.CYXCustomerCameraDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		55C70E1B221FF3BB0069EEFB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UDTM6QBP66;
+				INFOPLIST_FILE = CYXCustomerCameraDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = model.CYXCustomerCameraDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		55C70DFE221FF3B80069EEFB /* Build configuration list for PBXProject "CYXCustomerCameraDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				55C70E17221FF3BB0069EEFB /* Debug */,
+				55C70E18221FF3BB0069EEFB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		55C70E19221FF3BB0069EEFB /* Build configuration list for PBXNativeTarget "CYXCustomerCameraDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				55C70E1A221FF3BB0069EEFB /* Debug */,
+				55C70E1B221FF3BB0069EEFB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 55C70DFB221FF3B80069EEFB /* Project object */;
+}
