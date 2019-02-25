@@ -253,8 +253,10 @@
     CGFloat kX =self.shadowView.kMarginX;
     CGFloat kY = self.shadowView.kMarginY;
     CGRect  cutRect =CGRectMake(kX, kY, self.shadowView.frame.size.width-kX*2, self.shadowView.frame.size.height-kY*2);
-
-    image =[self ct_imageFromImage:image inRect:cutRect scale:[UIScreen mainScreen].scale];
+    CGFloat scaleY = self.shadowView.frame.size.width/image.size.width;
+    CGFloat scaleX = self.shadowView.frame.size.height/image.size.height;
+    image =[self ct_imageFromImage:image inRect:cutRect scaleX:scaleX scaleY:scaleY];
+    
     if ([self.delegate respondsToSelector:@selector(cameraDidSelectedIdcardPhotoImage:)]) {
         [self disMiss];
         [self.delegate cameraDidSelectedIdcardPhotoImage:image];
@@ -287,25 +289,35 @@
     }
 }
 /**
- *  从图片中按指定的位置大小截取图片的一部分
- *
- *  @param image UIImage image 原始的图片
- *  @param rect  CGRect rect 要截取的区域
- *
- *  @return UIImage
+ 从图片中按指定的位置大小截取图片的一部分
+ 
+ @param image image UIImage image 原始的图片
+ @param rect CGRect rect 要截取的区域
+ @param scaleX scaleX
+ @param scaleY scaleY
+ @return UIImage
  */
-- (UIImage *)ct_imageFromImage:(UIImage *)image inRect:(CGRect)rect scale:(CGFloat )scale{
+- (UIImage *)ct_imageFromImage:(UIImage *)image inRect:(CGRect)rect scaleX:(CGFloat )scaleX scaleY:(CGFloat )scaleY{
+    //这里因为不是横屏布局 所以需要横纵坐标变换一下
     
-    //把像 素rect 转化为 点rect（如无转化则按原图像素取部分图片）
-    //CGFloat scale = image.scale;
-    CGFloat y= rect.origin.x*scale,x=rect.origin.y*scale,h=rect.size.width*scale,w=rect.size.height*scale;
-    CGRect dianRect = CGRectMake(x, y, w, h);
-    //截取部分图片并生成新图片
-    CGImageRef sourceImageRef = [image CGImage];
-    CGImageRef newImageRef = CGImageCreateWithImageInRect(sourceImageRef, dianRect);
-    UIImage *newImage = [UIImage imageWithCGImage:newImageRef scale:[UIScreen mainScreen].scale orientation:UIImageOrientationUp];
-    return newImage;
+    CGFloat origX = (rect.origin.y - 0) / scaleX;
+    CGFloat origY = (rect.origin.x - 0) / scaleY;
+    
+    CGFloat oriWidth = rect.size.height / scaleX;
+    CGFloat oriHeight = rect.size.width / scaleY;
+    
+    CGRect myRect = CGRectMake(origX, origY, oriWidth, oriHeight);
+    CGImageRef  imageRef = CGImageCreateWithImageInRect(image.CGImage, myRect);
+    UIGraphicsBeginImageContext(myRect.size);
+    
+    CGContextRef context = UIGraphicsGetCurrentContext();
+    CGContextDrawImage(context, myRect, imageRef);
+    UIImage * clipImage = [UIImage imageWithCGImage:imageRef];
+    UIGraphicsEndImageContext();
+    return clipImage;
+    
 }
+
 
 
 
